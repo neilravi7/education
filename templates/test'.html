@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-image: url('/placeholder.svg?height=300&width=1200');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 80px 0;
+            margin-top: 0;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(26, 27, 58, 0.8);
+        }
+
+        .notice-title {
+            color: #ffb62d;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            color: white;
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .date-box {
+            background-color: #ffb62d;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+        }
+
+        .date-box .day {
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .date-box .month-year {
+            font-size: 0.9rem;
+        }
+
+        .read-more-btn {
+            background-color: #ffb62d;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .read-more-btn:hover {
+            background-color: #e6a328;
+            color: white;
+        }
+
+        .nav-bar {
+            background-color: #1a1b3a;
+            padding: 15px 0;
+        }
+        
+        .nav-menu {
+            background-color: #ffb62d;
+            padding: 15px 0;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .logo {
+            height: 50px;
+        }
+        
+        .logo-text {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .logo-text span {
+            color: #ffb62d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+
+    <nav class="nav-menu">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">COURSES</a>
+                <a href="#">EVENTS</a>
+                <a href="#">BLOG</a>
+                <a href="#">PAGES</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1 class="notice-title display-4 mb-4">Notice</h1>
+            <p class="hero-text">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
+        </div>
+    </section>
+
+    <!-- Notices List -->
+    <div class="container py-5">
+        <!-- Notice Item 1 -->
+        <div class="row mb-4 align-items-center">
+            <div class="col-auto">
+                <div class="date-box d-flex flex-column justify-content-center">
+                    <div class="day">30</div>
+                    <div class="month-year">APR,2019</div>
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="h4">Teaching Materials and Testing Methods</h2>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis saepe omnis officia! Doloribus quae maiores laboriosam praesentium enim fugiat ipsam laudantium assumenda!</p>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="read-more-btn rounded">Read More</a>
+            </div>
+        </div>
+
+        <!-- Notice Item 2 -->
+        <div class="row mb-4 align-items-center">
+            <div class="col-auto">
+                <div class="date-box d-flex flex-column justify-content-center">
+                    <div class="day">27</div>
+                    <div class="month-year">APR,2019</div>
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="h4">Biltong sirloin sausage brisket porchetta prosciutto</h2>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis saepe omnis officia! Doloribus quae maiores laboriosam praesentium enim fugiat ipsam laudantium assumenda!</p>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="read-more-btn rounded">Read More</a>
+            </div>
+        </div>
+
+        <!-- Notice Item 3 -->
+        <div class="row mb-4 align-items-center">
+            <div class="col-auto">
+                <div class="date-box d-flex flex-column justify-content-center">
+                    <div class="day">25</div>
+                    <div class="month-year">APR,2019</div>
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="h4">Teaching Materials and Testing Methods</h2>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis saepe omnis officia! Doloribus quae maiores laboriosam praesentium enim fugiat ipsam laudantium assumenda!</p>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="read-more-btn rounded">Read More</a>
+            </div>
+        </div>
+
+        <!-- Notice Item 4 -->
+        <div class="row mb-4 align-items-center">
+            <div class="col-auto">
+                <div class="date-box d-flex flex-column justify-content-center">
+                    <div class="day">23</div>
+                    <div class="month-year">APR,2019</div>
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="h4">Biltong sirloin sausage brisket porchetta prosciutto</h2>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis saepe omnis officia! Doloribus quae maiores laboriosam praesentium enim fugiat ipsam laudantium assumenda!</p>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="read-more-btn rounded">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

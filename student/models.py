@@ -23,7 +23,7 @@ class Student(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.name} - {self.admission_number}"
+        return f"{self.first_name} - {self.admission_number}"
 
 class TransferCertificate(models.Model):
     id = models.AutoField(primary_key=True)
@@ -35,4 +35,4 @@ class TransferCertificate(models.Model):
         db_table = 'transfer_certificates'
 
     def __str__(self):
-        return f"TC - {self.student.name}"
+        return f"TC - {self.student.first_name} {self.student.last_name}"

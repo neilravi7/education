@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+{% block title %} Gallery {% endblock %}
+
+<!-- {% block hero %} Gallery {% endblock %} -->
+
+{% block content %} 
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <h3 class="mt-2">Activities</h3>
+            <!-- Event Card 1 -->
+            {% for gallery_item in gallery %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card event-card h-100">
+                    <div class="position-relative">
+                        <img src="{{ gallery_item.file.url }}" class="card-img-top" alt="Event">
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}
