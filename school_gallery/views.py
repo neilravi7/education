@@ -8,8 +8,11 @@ home_response ="""
 <h1> work in progress <h2>
 <ul>
 <li>
+    <a href="/admin">ADMIN PANEL</a>
+</li>
+<li>
     <a href="/updates">NEWS</a>
-        </li>
+</li>
 <li>
     <a href="/gallery">GALLERY</a>
 </li>
